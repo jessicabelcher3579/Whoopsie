@@ -1,0 +1,16 @@
+/* Must import font (Press Start 2P) at the start of the CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+p {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+  /* Google Fonts provides this for us (Copied and pasted from fonts.google.com) */
+  font-family: 'Roboto', sans-serif;
+  /* font-style: italic; */
+  font-weight: 400;
+  /* font-weight: 700; */
+  /* If you want to have text that is bold and italic you must select that specific font */
+}
+

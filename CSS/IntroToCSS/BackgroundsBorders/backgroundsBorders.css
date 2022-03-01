@@ -1,0 +1,62 @@
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+/* BACKGROUND */
+/* Sets the entire window to the rgb(60, 59, 110) color */
+/* body {
+  background-color: rgb(60, 59, 110);
+} */
+
+/* Using background-color property to set a background for an element */
+h2 {
+  background-color: rgb(60, 59, 110);
+}
+
+div {
+  background-color: rgba(178, 34, 52, 0.5);
+}
+
+body {
+  /* Images can also be used as a background. To use a link to an image url() must be used. */
+  /* background-image: url("https://images.unsplash.com/photo-1447727214830-cbcbf097b52c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2196&q=80"); */
+  /* Setting background-size to cover will shrink the image to cover the screen/viewport in the example above (Image larger than screen) */
+  /* background-size: cover; */
+
+  /* Local Images (AKA Images on your computer) can also be used a as background */
+  /* NOTE: Still need to use url() */
+  background-image: url("mountRushmore.jpg");
+  /* Stops the image from tiling across the screen (AKA Repeating) */
+  background-repeat: no-repeat;
+  /* Stretches the image to cover the screen/viewport in this example (Image smaller than screen) */
+  background-size: cover;
+}
+
+/* BORDER */
+/* Borders in CSS have three different properties to set (Width, Style, & Color) */
+h3 {
+  /* border-width: 7px;
+  border-style: solid;
+  border-color: white; */
+
+  /* All three styles/properties can be set using the "border" property */
+  /* border: width style color */
+  border: 7px solid white;
+
+  /* The "border-radius" property is used to round the corners of the border around an element (NOTE: The higher the number the more rounded the corners will be) */
+  border-radius: 10px;
+}
+
+div {
+  /* Border left, right, top, or bottom can be used to set a border to a specific side of an element */
+  border-top: 15px dotted rgb(60, 59, 110);
+  border-right: 20px dashed rgb(60, 59, 110);
+}

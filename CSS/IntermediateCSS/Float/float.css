@@ -1,0 +1,13 @@
+/* FLOAT */
+
+img {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+  /* Float takes the element out of the normal document flow. Also, removes the "Mystery Space" (Not margin or padding) between space. */
+  /* The "Mystery Space" is the spaces in the HTML file between inline elements (Images in this case) */
+  /* float: left; */
+  float: right;
+}

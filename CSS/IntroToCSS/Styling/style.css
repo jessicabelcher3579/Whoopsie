@@ -1,0 +1,13 @@
+/* Style sheet (The best the way to write CSS. Helps to declutter the HTML file) */
+
+h1 {
+  color: aquamarine;
+}
+
+li {
+  color: orange;
+}
+
+h2 {
+  color: red;
+}

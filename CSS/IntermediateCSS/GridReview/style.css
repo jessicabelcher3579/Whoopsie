@@ -1,0 +1,84 @@
+body {
+  background-color: green;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+span {
+  border: 5px solid white;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+section {
+  background-color: green;
+
+  /* display: grid will create a Grid container (NOTE: This will not immediately change the way elements are displaying unless they are inline elements) */
+  display: grid;
+
+  /* COLUMNS */
+  /* grid-template-columns sets the amount of columns as well as the width of them */
+  /* grid-template-columns: 250px 250px 250px; */
+  /* Repeat */
+  /* grid-template-columns: repeat(3, 250px);
+  grid-template-columns: 50% 50%; */
+
+  /* grid-template-columns: 50% 50%; */
+  /* Fraction (FR) can be used to create columns and distribute space in a CSS Grid */
+  /* For this example, the middle column takes up twice as much space as the first or last columns does */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+
+  /* ROWS */
+  /* grid-auto-rows sets a height for all rows in a CSS Grid */
+  /* grid-auto-rows: 125px; */
+  /* grid-template-rows can be used to set different heights for different rows */
+  /* grid-template-rows: 50px 200px; */
+
+  /* Auto will base height of row on content inside */
+  /* grid-template-rows: 50px auto; */
+
+  /* GAP */
+  /* grid-gap determines the space between columns and rows (grid-row-gap & grid-column-gap can be used to have rows and columns to be a different size */
+  grid-gap: 20px;
+  /* SHORTHAND grid-gap: row column */
+  /* grid-gap: 20px 50px */
+  /* grid-row-gap: 10px */
+  /* grid-column-gap: 30px */
+
+  /* Grid Template Areas can be used to map out your grid. The property grid-are has to be given to each grid element */
+
+  /* Has to be a string (AKA inside "") */
+  grid-template-areas: 
+  "one one two two"
+  "three four four four"
+  "five five five six"; 
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+

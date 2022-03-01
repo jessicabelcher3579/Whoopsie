@@ -1,0 +1,65 @@
+/* Flexbox container */
+.parent {
+    background-color: #000;
+    width: 100%;
+    height: 500px;
+    /* display: flex in a parent element creates a flexbox container for the child elements. Also puts child elements in a row */
+    display: flex;
+
+    /* Justify Content */
+    /* Determines horizontal alignment of elements */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+
+    /* Spaces with equal margins */
+    /* justify-content: space-around; */
+
+    /* Maximizes space between elements (pushes outside elements to the edge) */
+    /* justify-content: space-between; */
+
+    /* Even distribution of space */
+    /* justify-content: space-evenly; */
+
+    /* Align Items */
+    /* Determines vertical alignment of elements */
+    /* can use center, flex-end, flex-start */
+    /* align-items: center; */
+
+    /* To align items in center of the screen */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* flex-direction:column changes the elements to a column and inverts to horizontal and vertical axes */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  /* Order sets the order of the elements */
+  .child-one {
+    background-color: rgb(116, 255, 116);
+    width: 100px;
+    height: 100px;
+
+    /* order: 2; */
+  }
+  
+  .child-two {
+    background-color: rgb(248, 117, 117);
+    width: 100px;
+    height: 100px;
+
+    /* order: 3; */
+  }
+  
+  .child-three {
+    background-color: rgb(255, 116, 232);
+    width: 100px;
+    height: 100px;
+
+    /* order: 1; */
+  }
+
+  /* Article on Flex Basis, Shrink, Grow */
+  /* https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/ */

@@ -1,0 +1,35 @@
+/* CSS Transitions */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+
+  /* Must specify the property you are changing. or you can use the "all" value if you want your transition settings to apply to all transitioning properties. */
+  /* transition-property: width; */
+  transition-property: all;
+
+  /* transition-duration determines the amount of time the transition takes to complete */
+  transition-duration: 1s;
+
+  /* transition-timing-function determines the acceleration/deceleration of the transition */
+  /* Linear is the default value */
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: ease-in; */
+  transition-timing-function: ease-out;
+
+  /* transition-delay determines if there is a delay between the event (Example: Hovering over an element) and the transition. Also, determines the length of the delay if there is one. */
+  transition-delay: 1s;
+
+  /* Transition Shorthand */
+  /* Property, duration, timing-function, delay */
+  transition: all 2s ease-out 1s;
+}
+
+div:hover {
+  width: 600px;
+  height: 600px;
+  background-color: blue;
+
+  /* Rotates the element */
+  transform: rotate(720deg);
+}

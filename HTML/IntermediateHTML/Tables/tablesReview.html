@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Review</title>
+</head>
+<body>
+    <h3>Create a Favorite TV Show Table</h3>
+    <!-- The type attribute sets how an ordered list will be displayed (HINT: Emmet will show you all the options) -->
+    <ol type="1">
+        <li>Create our table</li>
+        <ul>
+            <!-- You can nest within lists  -->
+            <!-- <em> italicizes text and is best practice for doing so for accessibility purposes! -->
+            <li><em>Don't forget to add the border inline style</em></li>
+        </ul>
+        <li>Add 3 of each:</li>
+        <ol type="i">
+            <li>Name of show</li>
+            <li>What channel/streaming service it shows on</li>
+            <li>A link to learn more about the show</li>
+            <ul>
+                <!-- the <a> tag is an example of an Inline element -->
+                <li>Get the link from <a href="imdb.com">IMdB</a></li>
+            </ul>
+        </ol>
+    </ol>
+    <!-- The border attribute is an example of Inline styling. Most of the time this is discouraged, but in this example it is a quick and easy way to more easily see the table we are creating -->
+    <table border="1">
+        <!-- thead is for the "table head" section of the table -->
+        <thead>
+            <!-- tr or table row creates a row with the information wrapped within its opening and closing tags -->
+            <tr>
+                <!-- "th" is to "td" as "h1"(or h2-6) is to "p" -->
+                <th>Favorite TV Show</th>
+                <th>Channel/Stream</th>
+                <th>IMDB Link</th>
+            </tr>
+        </thead>
+        <!-- The tbody is for the body section of the table -->
+        <tbody>
+            <tr>
+                <td>Outlander</td>
+                <td>Starz</td>
+                <td><a href="https://www.imdb.com/title/tt3006802/?ref_=nv_sr_srsg_0">Outlander</a></td>
+            </tr>
+            <tr>
+                <td>Downton Abbey</td>
+                <td>Netflix</td>
+                <td><a href="https://www.imdb.com/title/tt1606375/?ref_=nv_sr_srsg_0">Downton Abbey</a></td>
+            </tr>
+            <tr>
+                <td>It's Always Sunny</td>
+                <td>??</td>
+                <td><a href="https://www.imdb.com/title/tt0472954/?ref_=nv_sr_srsg_0">It's Always Sunny</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
